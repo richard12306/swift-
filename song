@@ -1,0 +1,26 @@
+
+import Foundation
+class Song: Hashable {
+    var delegate:
+    var name:String = ""
+    var album:String = ""
+    var artist:String = ""
+    var playingtime:Int = 0
+    var hashValue: Int {
+        get {"\self.name), \(\self.album), (self.artist), (self.playingtime)".hashValue
+    }
+    
+}
+
+
+
+
+init(name: String, artist: String, album: String, composer: String, duration: Int32) {
+    self.name = name
+    self.album = album
+    self.artist = artist
+    self.playingtime = playingtime
+    delegate = []
+}
+
+print("Name:\(name) Album:\(album) Artist:\(artist)  Playingtime:\(playingtime)")
